@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Mproject } from "./BasicReactMethod/Mproject";
+import { Jsx } from "./BasicReactMethod/Jsx";
+import { Book } from "./BasicReactMethod/Book";
+import { SimpleList } from "./BasicReactMethod/SimpleList";
+import { ProperList } from "./BasicReactMethod/ProperList";
 
-function App() {
+export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Mproject />
+      <Jsx />
+      <Book />
+      <SimpleList />
+      <ProperList />
     </div>
   );
 }
-
 export default App;
